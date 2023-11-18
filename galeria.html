@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="galeria.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+  <header>
+    <img src="https://s.educacaoadventista.org.br/escola/sobres/yebVXdoi0u3ObUGbrUwshbkuLUj0o4QAT1ljhHjG.png" alt="">
+
+    <nav>
+      <a href="">Contatos</a>
+      <a href="">Calendario</a>
+      <a href="index.html">Home</a>
+    </nav>
+
+  </header>
+
+
+  <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="https://live.staticflickr.com/65535/53296402427_def1b04de1_h.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="https://live.staticflickr.com/65535/53297277476_28b4197f76_h.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="https://live.staticflickr.com/65535/53297750750_0269d3fec8_h.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="https://live.staticflickr.com/65535/53297754490_def219ad17_h.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="https://live.staticflickr.com/65535/53303458981_5735ddf02e_h.jpg" />
+      </div>
+
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+  <div thumbsSlider="" class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="https://live.staticflickr.com/65535/53296402427_def1b04de1_h.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="https://live.staticflickr.com/65535/53297277476_28b4197f76_h.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="https://live.staticflickr.com/65535/53297750750_0269d3fec8_h.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="https://live.staticflickr.com/65535/53297754490_def219ad17_h.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="https://live.staticflickr.com/65535/53303458981_5735ddf02e_h.jpg" />
+      </div>
+    </div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 10,
+      slidesPerView: 4,
+      freeMode: true,
+      watchSlidesProgress: true,
+    });
+    var swiper2 = new Swiper(".mySwiper2", {
+      spaceBetween: 10,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      thumbs: {
+        swiper: swiper,
+      },
+    });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+
+  <section class="conteudo">
+    <h2>Galeria de Fotos dos Jogos 2023</h2>
+  </section>
+
+  <section class="carregar">
+    <p>Envie sua Foto: </p><br>
+    <input class="enviar" type="file"><br><br>
+    <button type="button" class="btn btn-outline-light btn-md">Enviar Arquivo</button>
+  </section>
+
+  <section class="GaleriaDeimagens">
+    <img src="https://live.staticflickr.com/65535/53303458161_1077b7e948.jpg" alt="imagemDoOlimpiasp">
+    <img src="https://live.staticflickr.com/65535/53303458136_22a53f0e29.jpg" alt="imagemDoOlimpiasp">
+    <img src="https://live.staticflickr.com/65535/53303702733_f6f0056340_w.jpg" alt="imagemDoOlimpiasp">
+    <img src="https://live.staticflickr.com/65535/53302596872_288a8eb673_n.jpg" alt="imagemDoOlimpiasp">
+    <img src="https://live.staticflickr.com/65535/53303459216_838527694f.jpg" alt="imagemDoOlimpiasp">
+    <img src="https://live.staticflickr.com/65535/53302597387_6041f1f0ef.jpg" alt="imagemDoOlimpiasp">
+    <img src="https://live.staticflickr.com/65535/53303938470_9e96b8ca9d.jpg" alt="imagemDoOlimpiasp">
+    <img src="https://live.staticflickr.com/65535/53303938935_3c18fcf7e0_b.jpg" alt="imagemDoOlimpiasp">
+    <img src="https://live.staticflickr.com/65535/53297651009_f9b43e3e94.jpg" alt="imagemDoOlimpiasp">
+    <img src="https://live.staticflickr.com/65535/52550449676_4e1b1bc947_c.jpg" alt="easter egg">
+    <img src="https://live.staticflickr.com/65535/53303459656_3e392c1a24_b.jpg" alt="imagemDoOlimpiasp">
+    <img src="https://live.staticflickr.com/65535/53303704023_013628f423_b.jpg" alt="imagemDoOlimpiasp">
+
+
+  </section>
+
+  <footer>
+
+    <nav>
+      <a href="contatos.html">Contatos</a>
+      <a href="">Calendario</a>
+      <a href="index.html">Home</a>
+    </nav><br>
+
+    <div class="endereco">
+      <p>Endereço:</p>
+      <p>Cep: 13184</p>
+      <p>Rua Pastor Gegembauer, 285 Hortolândia</p>
+    </div><br>
+
+    <div class="Contatos">
+      <p>Contatos:</p>
+      <p>UnaspHt@gmail.com</p>
+      <p>19 9887-4562</p>
+    </div><br>
+
+    <div>
+      <img class="logoUnasp" src="https://cdn.unasp.br/noticias/wp-content/uploads/2018/11/21164848/Logo-UNASP-03.png"
+        alt="">
+    </div>
+
+
+  </footer>
+  <div class="copy">Desenvolvedor: Kauan Afonso</div>
+
+</body>
+
+</html>

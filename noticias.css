@@ -1,0 +1,246 @@
+  
+    header {
+        background: #fff; ;
+        width: 100%;
+        position: sticky;
+        top: 0; /* Defina a posição a partir da parte superior da janela */
+        display: flex;
+        justify-content: space-around;
+        box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+      }
+      
+      
+      
+      header img{
+          width: 100px;
+      }
+      
+      nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        
+      }
+      
+      nav a {
+        text-decoration: none; 
+        color: rgb(255, 255, 255);
+        
+      }
+      
+      nav a:hover{
+        color: orange;
+      }
+
+    .mudarCorHeader, header{
+      
+        background:rgb(3, 3, 55) !important;
+    }
+
+
+    header{
+        margin-bottom: 40px;
+    }
+    .containers {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 50%;
+        margin: auto;
+        padding: 20px 10px;
+        /* background-color: rgb(5, 39, 126); */
+        color: rgb(3, 3, 55);
+        /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+       
+    }
+
+    .noticiaPrincipal {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        position: relative;
+        margin: auto;
+    }
+
+    .imagemDaNoticiaPrincipal {
+        width: 500px;
+        max-width: auto;
+        border-radius: 8px;
+        z-index: 0;
+        position: relative;
+        cursor: pointer;
+    }
+
+    .imagemDaNoticiaPrincipal, .imagemDaNoticiaSecundaria:hover{
+        padding: 10px !important;
+    }
+
+    .chamadaNoticia {
+        z-index: 1;
+        position: absolute;
+        margin: 10px;
+        bottom: 10px; /* Ajuste a posição vertical conforme necessário */
+        left: 8px; /* Ajuste a posição horizontal conforme necessário */
+        color: rgb(222, 91, 43); /* Adicionei uma cor de texto para melhor visibilidade */
+    }
+    .chamadaNoticia p{
+        color: white;
+    }
+
+    .chamadaNoticia2 p , .chamadaNoticia3 p{
+        color: orangered;
+    }
+   
+    .imagemDaNoticiaSecundaria {
+        width: 300px;
+        max-width: 400px;
+        border-radius: 8px;
+        z-index: 0;
+        position: relative;
+        cursor: pointer;
+    }
+
+    .noticiaSecundaria {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+
+    .card{
+        border-bottom: solid 2px black !important;
+        padding: 5px;
+        border-radius: 0px !important;
+        cursor: pointer;
+        
+    }
+
+    form .form-control{
+        background: orangered !important;
+        color: #fff !important;
+    }
+
+    .form-control::placeholder{
+        color: #fff !important;
+        
+    }
+
+    table, .card .card-title{
+        color: rgb(3, 3, 55);
+    }
+
+    .card .card-text{
+        color: rgb(0, 0, 8);
+    }
+
+    .card legend{
+        font-size:small;
+        display: flex;
+        font-style: italic;
+        margin-top: 30px;
+        gap: 5px;
+        color: orangered;
+    }
+
+
+    video{
+        width: 400px;
+    }
+
+
+    footer{
+        background-color: rgb(6, 6, 83);
+        margin-top: 12em;
+        color: white;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 80px 20px;
+        line-height: 0.5;
+        font-size:large;
+        /* color: rgb(254, 90, 30) !important; */
+        color: white;
+        line-height: 1.5;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+      
+      }
+      
+      footer nav {
+        display: block;
+        line-height: 1.4;
+        border-right: solid 2px rgb(254, 90, 30) !important;
+      }
+      
+      footer nav a{
+        display: block;
+        color: white;
+        padding-right: 15px;
+        
+      }
+      
+      .logoUnasp{
+        width: 200px;
+      }
+      
+      .copy{
+        background-color:rgb(254, 90, 30);
+        text-align: center;
+        padding: 5px;
+        color: white;
+      }
+    
+      @media screen and (max-width: 780px) {
+        .noticiaPrincipal{
+            display: none ;
+        }
+
+        .imagemDaNoticiaPrincipal{
+            width: 400px;
+        }
+
+        .chamadaNoticia {
+            z-index: 1;
+            position: absolute;
+            bottom: 50em; /* Ajuste a posição vertical conforme necessário */
+            left: 8px; /* Ajuste a posição horizontal conforme necessário */
+        }
+
+        footer{
+            display: block;
+          }
+        
+        form .form-control{
+            width: 100% !important;
+            margin-top: -80px !important;
+        }
+
+        header span{
+            font-size: 25px !important;
+            margin-right: 2px;
+        }
+    }
+
+    @media screen and (max-width: 440px) {
+
+        .containers{
+            display: none;
+        }
+
+        header{
+            padding: 20px;
+            font-size:smaller;
+        }
+
+        form .form-control{
+            margin-top: -40px !important;
+        }
+
+        header span{
+            font-size: 15px !important;
+            margin-right: 2px;
+        }
+    }
+
+    

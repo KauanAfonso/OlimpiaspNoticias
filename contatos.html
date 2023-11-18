@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Contatos</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="contatos.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Swiper -->
+
+  <header>
+    <img src="https://s.educacaoadventista.org.br/escola/sobres/yebVXdoi0u3ObUGbrUwshbkuLUj0o4QAT1ljhHjG.png"
+      alt="Unasp">
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="calendrio.html">Calendario</a>
+      <a href="galeria.html">Galeria De Fotos</a>
+    </nav>
+
+  </header>
+
+  <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper">
+    <div class="parallax-bg" style="
+          background-image: url(https://cdn.unasp.br/unasp-colegio/2021/11/colegio-unasp-ht-e1637696343587.jpg);
+          opacity: 0.4;
+        " data-swiper-parallax="-23%"></div>
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="title" data-swiper-parallax="-300">Venha para o Unasp</div>
+        <div class="subtitle" data-swiper-parallax="-200">Queremos te conhecer</div>
+        <div class="text" data-swiper-parallax="-100">
+          <p>
+            No coração da busca pelo saber, a Escola Unasp se destaca como um farol de excelência educacional.
+             Fundamentada em valores sólidos e uma visão vanguardista, a Unasp proporciona uma jornada única de 
+             aprendizado e crescimento. 
+          </p>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="title" data-swiper-parallax="-300">Descubra o Mundo do Conhecimento na Escola Unasp</div>
+        <div class="subtitle" data-swiper-parallax="-200">Lugar de gente feliz!</div>
+        <div class="text" data-swiper-parallax="-100">
+          <p>
+            Bem-vindo à Escola Unasp, onde a jornada educacional transcende as fronteiras do ordinário. Somos mais do que uma instituição de ensino; somos uma comunidade vibrante dedicada a cultivar mentes inquisitivas, corações compassivos e líderes do amanhã. Em cada corredor, em cada sala de aula, respira-se a atmosfera de aprendizagem transformadora que define a experiência do Unasp.
+          </p>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="title" data-swiper-parallax="-300">
+          Desbravando Fronteiras Educacionais na Unasp: Faculdade e Ensinos Técnicos de Excelência</div>
+        <div class="subtitle" data-swiper-parallax="-200">No Unasp, a busca pelo conhecimento vai além das expectativas convencionais.</div>
+        <div class="text" data-swiper-parallax="-100">
+          <p>
+           Na Unasp, o compromisso com a excelência acadêmica é evidente em cada curso oferecido. Nossa faculdade conta com profissionais renomados e uma estrutura de ensino que estimula a pesquisa, a inovação e a aplicação prática do conhecimento.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      speed: 600,
+      parallax: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+
+
+
+  <main class="mainContatos">
+
+    <h1>Nossa localização, venha nos conhecer!!! </h1><br>
+    <div class="mapouter">
+      <div class="gmap_canvas"><iframe
+          src="https://maps.google.com/maps?q=unasp%20hortolandia&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
+          frameborder="0" scrolling="no" style="width: 860px; height: 500px;"></iframe>
+        <style>
+          .mapouter {
+            position: relative;
+            height: 500px;
+            width: 860px;
+            background: #fff;
+          }
+        </style><a href="https://blooketjoin.org"
+          style="color:#fff !important; position:absolute !important; top:0 !important; z-index:0 !important;">blooket
+          join</a>
+        <style>
+          .gmap_canvas {
+            overflow: hidden;
+            height: 500px;
+            width: 860px
+          }
+
+          .gmap_canvas iframe {
+            position: relative;
+            z-index: 2
+          }
+        </style>
+      </div>
+    </div>
+
+    <section class="principal">
+      <div class="contatos">
+        <h1 style="margin-top: 80px;">Informações e Contatos</h1><br>
+
+        <ul>
+          <li><a href="https://www.instagram.com/"><i class="fa fa-instagram"
+                style="font-size:36px; color: black;"></i></a></li><br>
+          <li><a href="https://www.facebook.com/?locale=pt_BR"><i class="fa fa-facebook-f"
+                style="font-size:36px; color: black;"></i></li></a><br>
+          <li><a href="https://www.whatsapp.com/?lang=pt_BR"><i style='font-size:32px; color: black;'>&#9742;</i></a>
+          </li>
+        </ul>
+
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfxBv9oeYEy0BylRaD2KoupBMTAejYeUgglw&usqp=CAU"
+          alt="" style="border-radius: 50%;">
+
+      </div><br><br>
+
+
+      <form action="post">
+
+        <h1>Deixe sua Sugestão </h1><br><br>
+
+        <label for="">Email:</label><br>
+        <input type="text"><br>
+        <label for="">Nome:</label><br>
+        <input type="text"><br>
+        <br>
+
+
+        <label class="legendat" for="">Número:</label><br>
+        <input type="text"><br>
+
+
+        <label class="legendat" for="">Deixe suas Sugestões:</label><br>
+        <textarea rows="8" cols="55"></textarea><br>
+        <button class="btn">Enviar</button>
+
+
+      </form>
+    </section>
+  </main>
+
+  <a class="linkTozap" href="https://www.whatsapp.com/?lang=pt_BR"><img class="whatts"
+      src="https://static.vecteezy.com/system/resources/previews/018/930/748/non_2x/whatsapp-logo-whatsapp-icon-whatsapp-transparent-free-png.png"
+      alt=""></a>
+
+  <footer>
+
+    <nav>
+      <a href="contatos.html">Contatos</a>
+      <a href="calendrio.html">Calendario</a>
+      <a href="galeria.html">Galeria De Fotos</a>
+    </nav><br>
+
+    <div class="endereco">
+      <p>Endereço:</p>
+      <p>Cep: 13184</p>
+      <p>Rua Pastor Gegembauer, 285 Hortolândia</p>
+    </div><br>
+
+    <div class="Contatos">
+      <p>Contatos:</p>
+      <p>UnaspHt@gmail.com</p>
+      <p>19 9887-4562</p>
+    </div><br>
+
+    <div>
+      <img class="logoUnasp" src="https://cdn.unasp.br/noticias/wp-content/uploads/2018/11/21164848/Logo-UNASP-03.png"
+        alt="">
+    </div>
+
+
+  </footer>
+  <div class="copy">Desenvolvedor: Kauan Afonso</div>
+</body>
+
+</html>

@@ -1,0 +1,169 @@
+html,
+body {
+  position: relative;
+  height: 100%;
+ 
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 100%;
+  height: 80%;
+  background: #000;
+}
+
+.swiper-slide {
+  font-size: 18px;
+  color: #fff;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 40px 60px;
+}
+
+.parallax-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 130%;
+  height: 100%;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
+}
+
+.swiper-slide .title {
+  font-size: 41px;
+  font-weight: 300;
+}
+
+.swiper-slide .subtitle {
+  font-size: 21px;
+}
+
+.swiper-slide .text {
+  font-size: 14px;
+  max-width: 400px;
+  line-height: 1.3;
+}
+
+.linkTozap{
+    position: fixed;
+    top: 10%;
+}
+
+.whatts{
+    width: 100px;
+}
+
+.mainContatos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  
+}
+
+.principal{
+    display: flex !important;
+    gap: 20px;
+}
+
+.contatos ul{
+    display: flex !important;
+    gap: 15px;
+    list-style-type: none;
+    align-items: stretch;
+    padding: 10px;
+    border-top: solid 2px black;
+
+}
+
+
+h1,ul{
+    justify-content: center;
+    text-align: center;
+    color: orangered;
+}
+
+
+form{
+    background-color: rgb(6, 6, 83);
+    border-radius: 20px;
+    color: orangered;
+    padding: 50px 40px;
+    margin-top: 40px;
+    box-shadow: rgba(6, 6, 83, 0.3) 5px 5px,
+            rgba(6, 6, 83, 0.3) 10px 10px,
+            rgba(6, 6, 83, 0.2) 15px 15px,
+            rgba(6, 6, 83, 0.34) 20px 20px,
+            rgba(6, 6, 83, 0.42) 25px 25px;
+
+}
+
+form input{
+    display: flex !important;
+    border: none;
+    width: 100%;
+    padding: 10px 4px;
+    background: rgb(130, 159, 255);
+    border-radius: 10px;
+    
+}
+
+textarea{
+  background: rgb(130, 159, 255);
+  width: 100%;
+  border-radius: 10px;
+}
+
+textarea , .legendat{
+    display: flex;
+    
+}
+
+.btn{
+    
+    width: 100%;
+    padding: 10px;
+    margin-top: 3em;
+    margin-bottom: 10px;
+    background-color: orangered;
+    border: none;
+    border-radius: 2px;
+    border-radius: 5px;
+    
+}
+
+.btn:hover{
+  background: rgb(255, 232, 210);
+}
+
+
+@media screen and (max-width: 780px) {
+
+.mainContatos{
+    
+      display: block;
+    
+    
+  }
+
+textarea , .legendat{
+    margin-left: 0%;
+}
+
+
+.principal{
+    display: block !important;
+}
+ 
+}

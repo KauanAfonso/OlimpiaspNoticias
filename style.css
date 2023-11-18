@@ -1,0 +1,187 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+header {
+  background: #fff; ;
+  width: 100%;
+  position: sticky;
+  top: 0; /* Defina a posição a partir da parte superior da janela */
+  display: flex;
+  justify-content: space-around;
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+
+
+header img{
+    width: 100px;
+}
+
+nav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  
+}
+
+nav a {
+  text-decoration: none; 
+  color: rgb(6, 6, 83);
+  
+}
+
+nav a:hover{
+  color: orange;
+}
+
+.sectioninicial {
+    position: relative;
+    text-align: center; 
+  }
+  
+  .imagemPrincipal {
+    background-image: url('https://cdn.unasp.br/unasp-colegio/2020/09/aSDFGHJKL%C3%87L-1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 600px; /* Ajuste a altura desejada */
+    position: absolute;
+    z-index: -1; /* Coloca a imagem atrás de outros elementos */
+    background-attachment: fixed ; /* Deixar o bground fixo para efeito parallax */
+    opacity: 0.8;
+    border: solid 3px rgb(255, 102, 0);
+  }
+  
+  .textoMain  {
+    z-index: 1; /* Coloca o botão na frente da imagem */
+    padding-top: 200px;
+  }
+
+  .textoMain p{
+    color: white;
+    font-size: 4em;
+    font-weight: 900;
+    animation: 4s ease-out wipe-in-right both;
+
+  }
+
+
+  @keyframes wipe-in-right {
+    from {
+      clip-path: inset(0 100% 0 0);
+    }
+    to {
+      clip-path: inset(0 0 0 0);
+    }
+  }
+  
+  [transition-style="in:wipe:right"] {
+    animation: 4s ease-out wipe-in-right both;
+
+  }
+
+  .titulo{
+    margin-top: 25em;
+    text-align: center;
+    color: rgb(6, 6, 83);
+    font-weight: 400;
+    
+  }
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10em;
+   
+ 
+}
+
+main .card{
+    background-color: rgb(6, 6, 83);
+    color: white;
+    width: 12em;
+    height: 12em;
+    display: flex;
+    cursor:pointer;
+  
+    
+}
+
+main .card:hover{
+  background:orangered;
+  border: solid 2px rgb(2, 2, 56);
+
+}
+
+.card p{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 2em;
+    margin-top: 30%;
+}
+
+
+.btn-chaveamento{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 5em;
+}
+
+
+footer{
+  background-color: rgb(6, 6, 83);
+  margin-top: 12em;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 80px 20px;
+  line-height: 0.5;
+  font-size:large;
+  /* color: rgb(254, 90, 30) !important; */
+  color: white;
+  line-height: 1.5;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+
+}
+
+footer nav {
+  display: block;
+  line-height: 1.4;
+  border-right: solid 2px rgb(254, 90, 30) !important;
+}
+
+footer nav a{
+  display: block;
+  color: white;
+  padding-right: 15px;
+  
+}
+
+.logoUnasp{
+  width: 200px;
+}
+
+.copy{
+  background-color:rgb(254, 90, 30);
+  text-align: center;
+  padding: 5px;
+  color: white;
+}
+
+@media screen and (max-width: 780px) {
+
+  footer{
+    display: block;
+  }
+  
+}
